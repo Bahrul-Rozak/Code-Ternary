@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>🍊 Code Ternary</title>
+
+       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+       <link rel="stylesheet" href="src/styles/globals.min.css">
+
+</head>
+
+<body>
+       <main>
+              <div class="container">
+                     <div class="header">
+                            <h1>🍊 Code Ternary</h1>
+                            <p>Convert if else to ternary operator and vice versa.</p>
+                     </div>
+                     <textarea id="input"
+                            placeholder='Enter your code here, for example: firstCheck ? "Access denied" : secondCheck ? "Access denied" : "Access granted"'
+                            class="hljs javascript">const cuaca = "hujan"
+let persiapan
+
+if (cuaca) {
+  persiapan = "Bawa Payung"
+} else {
+  persiapan = "Tidak Perlu"
+}
+
+console.log(persiapan)
+</textarea>
+                     <div class="button-container">
+                            <button onclick="convertToTernary()">Convert to Ternary</button>
+                            <button onclick="convertToIfElse()">Convert to If-Else</button>
+                     </div>
+                     <div class="result" id="result"></div>
+              </div>
+       </main>
+       <footer>
+              <div class="footer">
+                     <p>Build with ❤️ by <a href="https://github.com/Bahrul-Rozak" target="_blank">Bahrul Rozak 🍊</a></p>
+              </div>
+       </footer>
+       </footer>
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+
+       <script>
+              hljs.highlightAll();
+       </script>
+
+       <script src="src/scripts/coverterLogic.min.js"></script>
+
+</body>
+
+</html>
